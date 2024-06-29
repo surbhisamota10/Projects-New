@@ -30,3 +30,10 @@ https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image1.png
 
 https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image2.png
 
+Now you need to go inside subnet section ,
+we need to make sure we 'Enable auto-assign public IPv4 address' for BOTH public subnets so we can access its resources via the Internet.
+
+
+
+
+
