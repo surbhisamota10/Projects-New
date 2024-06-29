@@ -11,10 +11,9 @@ Pre-requisites:
 -> Familiarity with Linux commands, basic scripting, and SSH.
 -> Access to a command line tool.
 
-Step 1: Login in your aws account .
+*Login in your aws account*
 
-Step 2: Set Up Your VPC (Virtual Private Cloud)
-
+*Set Up Your VPC (Virtual Private Cloud)*
 This base network consists of:
 
 A VPC.
@@ -30,12 +29,31 @@ https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image1.png
 
 https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image2.png
 
+*Enable auto-assign*
 Now you need to go inside subnet section ,
 we need to make sure we 'Enable auto-assign public IPv4 address' for BOTH public subnets so we can access its resources via the Internet.
 
 https://github.com/surbhisamota10/Projects-New/blob/main/subnetsetting1.png
 
+*Change route table*
 Now change the default route table to newly created route table with VPC.
+https://github.com/surbhisamota10/Projects-New/blob/main/routetablechange.png
+
+*Create a NAT Gateway*
+A NAT gateway allows instances from the private subnets to connect to resources outside of the VPC and the Internet (for necessary services such as patches or package updates).
+
+Navigate to ‘NAT Gateways’ and create a new gateway called public-NAT-1. Select one of the public subnets, allocate an elastic IP, and create the gateway.
+https://github.com/surbhisamota10/Projects-New/blob/main/NATgateway.png
+
+*Configure private route tables*
+
+As we can see, a route table has been created for each private subnet (4) by default. However, we only need one private route table (for the Application Tier subnets). This is where clear naming conventions can immensely help guard against confusion, so let’s navigate to our route tables and clean things up a bit.
+https://github.com/surbhisamota10/Projects-New/blob/main/editroutetable.png
+https://github.com/surbhisamota10/Projects-New/blob/main/editroutetable1.png
+
+
+
+**Tier 1: Web tier (Frontend)**
 
 
 
