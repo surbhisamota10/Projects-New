@@ -5,11 +5,26 @@ https://github.com/surbhisamota10/Projects-New/blob/main/3-tier%20web%20applicat
 Here’s a simplified description:
 
 Pre-requisites:
-*AWS account
-*Basic knowledge of AWS services like EC2, RDS, and VPC
+-> AWS account
+-> Basic knowledge of AWS services like EC2, RDS, and VPC, Auto scaling groups,Load balancer, and security groups.
+-> Familiarity with Linux commands, scripting, and SSH.
+-> Familiarity with Linux commands, basic scripting, and SSH.
+-> Access to a command line tool.
 
+Step 1: Login in your aws account .
 
-Step 1: Set Up Your VPC (Virtual Private Cloud)
+Step 2: Set Up Your VPC (Virtual Private Cloud)
+
+This base network consists of:
+
+A VPC.
+Two (2) public subnets spread across two availability zones (Web Tier).
+Two (2) private subnets spread across two availability zones (Application Tier).
+Two (2) private subnets spread across two availability zones (Database Tier).
+One (1) public route table that connects the public subnets to an internet gateway.
+One (1) private route table that will connect the Application Tier private subnets and a NAT gateway.
+
+In the VPC console, let’s create a new VPC. We’ll select the 'VPC and more' option and name our project 'MyVPC_web_app' with a CIDR block of 10.0.0.0/16
 
 
 
