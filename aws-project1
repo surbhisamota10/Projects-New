@@ -54,6 +54,15 @@ https://github.com/surbhisamota10/Projects-New/blob/main/editroutetable1.png
 
 
 **Tier 1: Web tier (Frontend)**
+What we’ll build:
+
+-> A web server launch template to define what kind of EC2 instances will be provisioned for the application.
+-> An Auto Scaling Group (ASG) that will dynamically provision EC2 instances.
+-> An Application Load Balancer (ALB) to help route incoming traffic to the proper targets.
+
+1. Create a web server launch template
+
+
 
 
 
