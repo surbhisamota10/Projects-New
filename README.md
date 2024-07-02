@@ -25,7 +25,9 @@ One (1) private route table that will connect the Application Tier private subne
 
 In the VPC console, let’s create a new VPC. We’ll select the 'VPC and more' option and name our project 'MyVPC_web_app' with a CIDR block of 10.0.0.0/16
 
-https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image1.png
+![VPCcreation-image1](https://github.com/surbhisamota10/Projects-New/assets/95540023/604a4eac-eec6-4274-b264-8d774300e56a)
+![VPCcreation-image1](https://github.com/surbhisamota10/Projects-New/assets/95540023/604a4eac-eec6-4274-b264-8d774300e56a)
+
 
 https://github.com/surbhisamota10/Projects-New/blob/main/VPCcreation-image2.png
 
