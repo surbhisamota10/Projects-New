@@ -139,8 +139,6 @@ We’ve successfully created an auto scaling web app environment that dynamicall
 
 *Note: Once you’re done using your ASG and ALB, be sure to delete them or you’ll get charged for the running EC2 instances. The instances will automatically terminate.*
 
-**![Screenshot (493)](https://github.com/user-attachments/assets/56eca1a3-695e-4b61-81d0-be30548b84d1)
-**
 
 
 
